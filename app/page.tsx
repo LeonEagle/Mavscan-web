@@ -1,15 +1,20 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 import { ViewfinderFrame } from "@/components/viewfinder-frame";
 import { siteConfig } from "@/lib/site";
 
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   const categories = [
-    { name: "Health Products", imageSrc: "/asset/Rectangle 1725.png" },
-    { name: "Wellness Products", imageSrc: "/asset/Rectangle 1722.png" },
-    { name: "Cosmetics", imageSrc: "/asset/Rectangle 1723.png" },
-    { name: "Beverages", imageSrc: "/asset/Rectangle 1724.png" },
+    { name: "Health Products", imageSrc: "/asset/Rectangle 1725.avif" },
+    { name: "Wellness Products", imageSrc: "/asset/Rectangle 1722.avif" },
+    { name: "Cosmetics", imageSrc: "/asset/Rectangle 1723.avif" },
+    { name: "Beverages", imageSrc: "/asset/Rectangle 1724.avif" },
   ];
   const howItWorksSteps = [
     {
@@ -17,21 +22,21 @@ export default function Home() {
       description:
         "Open your app, tap the central Scan icon, and point your phone at the product's barcode or QR code. It's that easy to get started.",
       reverse: false,
-      imageSrc: "/asset/Frame-1.png",
+      imageSrc: "/asset/Frame-1.avif",
     },
     {
       title: "Verify Authenticity",
       description:
         "The app checks against a verified database and tells you if the product is authentic, expired, or suspicious in real-time.",
       reverse: true,
-      imageSrc: "/asset/Frame-2.png",
+      imageSrc: "/asset/Frame-2.avif",
     },
     {
       title: "Review Certification & Details",
       description:
         "See safety certifications, manufacturer info, expiry status, ingredients, and more. Make confident, informed decisions every time.",
       reverse: false,
-      imageSrc: "/asset/Frame-3.png",
+      imageSrc: "/asset/Frame-3.avif",
     },
   ];
   const whyMavscanPoints = [
@@ -212,7 +217,7 @@ export default function Home() {
               <article className="relative overflow-hidden rounded-[28px]">
                 <div className="relative h-full min-h-[360px] w-full sm:min-h-[460px] lg:min-h-[860px] xl:min-h-[768px] 2xl:min-h-[927px]">
                   <Image
-                    src="/asset/mav-scan.jpg"
+                    src="/asset/mav-scan.avif"
                     alt="Mavscan product preview"
                     fill
                     sizes="(min-width: 1536px) 700px, (min-width: 1280px) 580px, (min-width: 768px) 50vw, 100vw"

@@ -25,13 +25,13 @@ export function SiteNav({ active = "home" }: SiteNavProps) {
       <div className="flex items-center gap-[24px]">
         <Link
           href="/"
-          className={`${linkClass} ${active === "home" ? "font-bold" : "font-normal"}`}
+          className={`${linkClass} ${active === "home" ? "font-bold" : "font-semibold"}`}
         >
           Home
         </Link>
         <Link
           href="/about"
-          className={`${linkClass} ${active === "about" ? "font-bold" : "font-normal"}`}
+          className={`${linkClass} ${active === "about" ? "font-bold" : "font-semibold"}`}
         >
           About us
         </Link>

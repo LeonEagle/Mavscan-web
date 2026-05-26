@@ -23,9 +23,6 @@ export const metadata: Metadata = {
   creator: siteConfig.company,
   publisher: siteConfig.company,
   category: "technology",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -35,7 +32,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/asset/mav-scan.jpg",
+        url: "/asset/mav-scan.avif",
         width: 1200,
         height: 800,
         alt: "Mavscan product verification app",
@@ -46,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ["/asset/mav-scan.jpg"],
+    images: ["/asset/mav-scan.avif"],
   },
   robots: {
     index: true,
@@ -80,7 +77,7 @@ const jsonLd = {
       "@id": `${siteConfig.url}/#organization`,
       name: siteConfig.company,
       url: siteConfig.url,
-      logo: `${siteConfig.url}/icon.svg`,
+      logo: `${siteConfig.url}/asset/mav-scan.jpg`,
       email: siteConfig.contact.email,
       telephone: siteConfig.contact.phone,
       address: {
